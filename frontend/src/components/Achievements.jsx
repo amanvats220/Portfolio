@@ -51,23 +51,19 @@ const Achievements = () => {
   ];
 
   const getColorClasses = (color) => {
-    const colorMap = {
-      yellow: 'bg-yellow-100 text-yellow-600 border-yellow-300',
-      blue: 'bg-blue-100 text-blue-600 border-blue-300',
-      orange: 'bg-orange-100 text-orange-600 border-orange-300',
-      purple: 'bg-purple-100 text-purple-600 border-purple-300',
-    };
-    return colorMap[color];
+    if (color === 'yellow') return 'bg-yellow-100 text-yellow-600 border-yellow-300';
+    if (color === 'blue') return 'bg-blue-100 text-blue-600 border-blue-300';
+    if (color === 'orange') return 'bg-orange-100 text-orange-600 border-orange-300';
+    if (color === 'purple') return 'bg-purple-100 text-purple-600 border-purple-300';
+    return '';
   };
 
   const getGradientClasses = (color) => {
-    const colorMap = {
-      yellow: 'from-yellow-500 to-orange-500',
-      blue: 'from-blue-500 to-cyan-500',
-      orange: 'from-orange-500 to-red-500',
-      purple: 'from-purple-500 to-pink-500',
-    };
-    return colorMap[color];
+    if (color === 'yellow') return 'from-yellow-500 to-orange-500';
+    if (color === 'blue') return 'from-blue-500 to-cyan-500';
+    if (color === 'orange') return 'from-orange-500 to-red-500';
+    if (color === 'purple') return 'from-purple-500 to-pink-500';
+    return '';
   };
 
   return (
