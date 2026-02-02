@@ -32,23 +32,19 @@ const Skills = () => {
   ];
 
   const getColorClasses = (color) => {
-    const colorMap = {
-      blue: 'bg-blue-100 text-blue-700 hover:bg-blue-200 border-blue-300',
-      green: 'bg-green-100 text-green-700 hover:bg-green-200 border-green-300',
-      purple: 'bg-purple-100 text-purple-700 hover:bg-purple-200 border-purple-300',
-      orange: 'bg-orange-100 text-orange-700 hover:bg-orange-200 border-orange-300',
-    };
-    return colorMap[color];
+    if (color === 'blue') return 'bg-blue-100 text-blue-700 hover:bg-blue-200 border-blue-300';
+    if (color === 'green') return 'bg-green-100 text-green-700 hover:bg-green-200 border-green-300';
+    if (color === 'purple') return 'bg-purple-100 text-purple-700 hover:bg-purple-200 border-purple-300';
+    if (color === 'orange') return 'bg-orange-100 text-orange-700 hover:bg-orange-200 border-orange-300';
+    return '';
   };
 
   const getIconBgColor = (color) => {
-    const colorMap = {
-      blue: 'bg-blue-100 text-blue-600',
-      green: 'bg-green-100 text-green-600',
-      purple: 'bg-purple-100 text-purple-600',
-      orange: 'bg-orange-100 text-orange-600',
-    };
-    return colorMap[color];
+    if (color === 'blue') return 'bg-blue-100 text-blue-600';
+    if (color === 'green') return 'bg-green-100 text-green-600';
+    if (color === 'purple') return 'bg-purple-100 text-purple-600';
+    if (color === 'orange') return 'bg-orange-100 text-orange-600';
+    return '';
   };
 
   return (
