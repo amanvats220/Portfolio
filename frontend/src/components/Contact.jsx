@@ -80,14 +80,12 @@ const Contact = () => {
   };
 
   const getIconColorClasses = (color) => {
-    const colorMap = {
-      blue: 'bg-blue-100 text-blue-600',
-      green: 'bg-green-100 text-green-600',
-      purple: 'bg-purple-100 text-purple-600',
-      slate: 'bg-slate-100 text-slate-600',
-      orange: 'bg-orange-100 text-orange-600',
-    };
-    return colorMap[color];
+    if (color === 'blue') return 'bg-blue-100 text-blue-600';
+    if (color === 'green') return 'bg-green-100 text-green-600';
+    if (color === 'purple') return 'bg-purple-100 text-purple-600';
+    if (color === 'slate') return 'bg-slate-100 text-slate-600';
+    if (color === 'orange') return 'bg-orange-100 text-orange-600';
+    return '';
   };
 
   return (
