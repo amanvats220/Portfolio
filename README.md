@@ -51,7 +51,7 @@ A console-based application designed to manage student records efficiently using
 - Persistent data storage using file handling  
 - Modular and maintainable class structure  
 
-🔗 GitHub Repository: _Add link here_  
+🔗 GitHub Repository: https://github.com/amanvats220/Portfolio  
 
 ---
 
@@ -66,7 +66,7 @@ A logic-oriented project demonstrating the implementation and behavior of fundam
 - Focus on time and space complexity analysis  
 - Clean and optimized logic  
 
-🔗 GitHub Repository: _Add link here_  
+🔗 GitHub Repository: https://github.com/amanvats220/Portfolio 
 
 ---
 
@@ -90,14 +90,6 @@ A responsive and minimal personal portfolio website designed to present skills, 
 
 - **LeetCode:** https://leetcode.com/u/Amanvats_07/  
   - Focus on consistent problem solving and DSA practice 
----
-
-## 📄 Resume
-
-A one-page, ATS-friendly resume highlighting my technical skills, projects, and academic background.
-
-📥 **Download Resume:** file:///C:/Users/Hp/Downloads/Amanvats_resume_3rd%20sem.pdf
-
 ---
 
 ## 📬 Contact
