@@ -1,7 +1,6 @@
 # Aman Vats | Personal Portfolio
 
 A professional and recruiter-grade personal portfolio website showcasing my academic background, technical skills, projects, and problem-solving abilities as a B.Tech undergraduate student.
-
 This portfolio is designed with a strong focus on clarity, performance, and honest representation of student-level experience, making it suitable for internship applications and technical interviews.
 
 ---
@@ -10,7 +9,6 @@ This portfolio is designed with a strong focus on clarity, performance, and hone
 
 I am **Aman Vats**, a **B.Tech (3rd Semester)** undergraduate and an aspiring **Software Engineer** with a strong foundation in **C++ and Data Structures & Algorithms**.  
 I actively practice problem solving on **LeetCode** and focus on writing clean, logical, and efficient code while strengthening my core computer science fundamentals.
-
 I am currently seeking **software development internship opportunities** to gain real-world experience and continue improving my technical skills.
 
 ---
@@ -18,8 +16,9 @@ I am currently seeking **software development internship opportunities** to gain
 ## 🛠️ Technical Skills
 
 ### Programming Languages
-- C++
-
+- C fundamentals
+- Python Libraries
+- C++ basics
 ### Web Fundamentals
 - HTML  
 - CSS  
@@ -34,7 +33,8 @@ I am currently seeking **software development internship opportunities** to gain
 ### Tools & Platforms
 - Git  
 - GitHub  
-- Visual Studio Code  
+- Visual Studio Code
+- Leetcode 
 
 ---
 
@@ -82,33 +82,29 @@ A responsive and minimal personal portfolio website designed to present skills, 
 - Fast loading and accessible structure  
 
 🔗 GitHub Repository: This repository  
-🔗 Live Demo: _Add deployed link here_  
+🔗 Live Demo: https://github.com/amanvats220/Portfolio 
 
 ---
 
 ## 💻 Coding Profiles
 
-- **LeetCode:** _Add profile link here_  
-  - Focus on consistent problem solving and DSA practice  
-
-*(Optional)*  
-- CodeChef / Codeforces: _Add link here_  
-
+- **LeetCode:** https://leetcode.com/u/Amanvats_07/  
+  - Focus on consistent problem solving and DSA practice 
 ---
 
 ## 📄 Resume
 
 A one-page, ATS-friendly resume highlighting my technical skills, projects, and academic background.
 
-📥 **Download Resume:** _Add resume PDF link here_  
+📥 **Download Resume:** file:///C:/Users/Hp/Downloads/Amanvats_resume_3rd%20sem.pdf
 
 ---
 
 ## 📬 Contact
 
-- **Email:** _your professional email_  
-- **GitHub:** _your GitHub profile link_  
-- **LinkedIn:** _your LinkedIn profile link_  
+- **Email:** vatsaman@gmail.com 
+- **GitHub:** https://github.com/amanvats220/Portfolio
+- **LinkedIn:** https://www.linkedin.com/in/aman-vats-869907335?utm_source=share_via&utm_content=profile&utm_medium=member_android 
 
 ---
 
