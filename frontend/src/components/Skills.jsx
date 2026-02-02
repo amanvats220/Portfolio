@@ -1,52 +1,9 @@
 import React from 'react';
-import { Code, Database, Globe, GitBranch, Layers, Terminal } from 'lucide-react';
+import { Code, Database, Globe, GitBranch, Terminal } from 'lucide-react';
 import { Badge } from './ui/badge';
 import { Card } from './ui/card';
 
 const Skills = () => {
-  const skillCategories = [
-    {
-      icon: Code,
-      title: 'Programming Languages',
-      skills: ['C++', 'JavaScript', 'HTML5', 'CSS3', 'SQL'],
-      color: 'blue',
-    },
-    {
-      icon: Database,
-      title: 'Core Computer Science',
-      skills: ['Data Structures', 'Algorithms', 'OOP', 'DBMS', 'Probability & Statistics'],
-      color: 'green',
-    },
-    {
-      icon: Globe,
-      title: 'Web Development',
-      skills: ['React', 'Node.js', 'REST APIs', 'Responsive Design', 'MongoDB'],
-      color: 'purple',
-    },
-    {
-      icon: GitBranch,
-      title: 'Tools & Platforms',
-      skills: ['Git', 'GitHub', 'VS Code', 'Linux', 'Postman'],
-      color: 'orange',
-    },
-  ];
-
-  const getColorClasses = (color) => {
-    if (color === 'blue') return 'bg-blue-100 text-blue-700 hover:bg-blue-200 border-blue-300';
-    if (color === 'green') return 'bg-green-100 text-green-700 hover:bg-green-200 border-green-300';
-    if (color === 'purple') return 'bg-purple-100 text-purple-700 hover:bg-purple-200 border-purple-300';
-    if (color === 'orange') return 'bg-orange-100 text-orange-700 hover:bg-orange-200 border-orange-300';
-    return '';
-  };
-
-  const getIconBgColor = (color) => {
-    if (color === 'blue') return 'bg-blue-100 text-blue-600';
-    if (color === 'green') return 'bg-green-100 text-green-600';
-    if (color === 'purple') return 'bg-purple-100 text-purple-600';
-    if (color === 'orange') return 'bg-orange-100 text-orange-600';
-    return '';
-  };
-
   return (
     <section id="skills" className="py-20 bg-slate-50">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
@@ -59,37 +16,116 @@ const Skills = () => {
         </div>
 
         <div className="grid md:grid-cols-2 gap-8">
-          {skillCategories.map((category, index) => {
-            const Icon = category.icon;
-            return (
-              <Card
-                key={index}
-                className="p-8 hover:shadow-xl hover:-translate-y-2 transition-all duration-300"
-              >
-                <div className="flex items-center gap-4 mb-6">
-                  <div className={`p-4 rounded-lg ${getIconBgColor(category.color)}`}>
-                    <Icon size={28} />
-                  </div>
-                  <h3 className="text-2xl font-bold text-slate-900">{category.title}</h3>
-                </div>
-                <div className="flex flex-wrap gap-3">
-                  {category.skills.map((skill, idx) => (
-                    <Badge
-                      key={idx}
-                      className={`px-4 py-2 text-sm font-medium border transition-all duration-300 hover:scale-105 cursor-default ${getColorClasses(
-                        category.color
-                      )}`}
-                    >
-                      {skill}
-                    </Badge>
-                  ))}
-                </div>
-              </Card>
-            );
-          })}
+          {/* Programming Languages */}
+          <Card className="p-8 hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+            <div className="flex items-center gap-4 mb-6">
+              <div className="p-4 rounded-lg bg-blue-100 text-blue-600">
+                <Code size={28} />
+              </div>
+              <h3 className="text-2xl font-bold text-slate-900">Programming Languages</h3>
+            </div>
+            <div className="flex flex-wrap gap-3">
+              <Badge className="px-4 py-2 text-sm font-medium border transition-all duration-300 hover:scale-105 cursor-default bg-blue-100 text-blue-700 hover:bg-blue-200 border-blue-300">
+                C++
+              </Badge>
+              <Badge className="px-4 py-2 text-sm font-medium border transition-all duration-300 hover:scale-105 cursor-default bg-blue-100 text-blue-700 hover:bg-blue-200 border-blue-300">
+                JavaScript
+              </Badge>
+              <Badge className="px-4 py-2 text-sm font-medium border transition-all duration-300 hover:scale-105 cursor-default bg-blue-100 text-blue-700 hover:bg-blue-200 border-blue-300">
+                HTML5
+              </Badge>
+              <Badge className="px-4 py-2 text-sm font-medium border transition-all duration-300 hover:scale-105 cursor-default bg-blue-100 text-blue-700 hover:bg-blue-200 border-blue-300">
+                CSS3
+              </Badge>
+              <Badge className="px-4 py-2 text-sm font-medium border transition-all duration-300 hover:scale-105 cursor-default bg-blue-100 text-blue-700 hover:bg-blue-200 border-blue-300">
+                SQL
+              </Badge>
+            </div>
+          </Card>
+
+          {/* Core CS */}
+          <Card className="p-8 hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+            <div className="flex items-center gap-4 mb-6">
+              <div className="p-4 rounded-lg bg-green-100 text-green-600">
+                <Database size={28} />
+              </div>
+              <h3 className="text-2xl font-bold text-slate-900">Core Computer Science</h3>
+            </div>
+            <div className="flex flex-wrap gap-3">
+              <Badge className="px-4 py-2 text-sm font-medium border transition-all duration-300 hover:scale-105 cursor-default bg-green-100 text-green-700 hover:bg-green-200 border-green-300">
+                Data Structures
+              </Badge>
+              <Badge className="px-4 py-2 text-sm font-medium border transition-all duration-300 hover:scale-105 cursor-default bg-green-100 text-green-700 hover:bg-green-200 border-green-300">
+                Algorithms
+              </Badge>
+              <Badge className="px-4 py-2 text-sm font-medium border transition-all duration-300 hover:scale-105 cursor-default bg-green-100 text-green-700 hover:bg-green-200 border-green-300">
+                OOP
+              </Badge>
+              <Badge className="px-4 py-2 text-sm font-medium border transition-all duration-300 hover:scale-105 cursor-default bg-green-100 text-green-700 hover:bg-green-200 border-green-300">
+                DBMS
+              </Badge>
+              <Badge className="px-4 py-2 text-sm font-medium border transition-all duration-300 hover:scale-105 cursor-default bg-green-100 text-green-700 hover:bg-green-200 border-green-300">
+                Probability & Statistics
+              </Badge>
+            </div>
+          </Card>
+
+          {/* Web Development */}
+          <Card className="p-8 hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+            <div className="flex items-center gap-4 mb-6">
+              <div className="p-4 rounded-lg bg-purple-100 text-purple-600">
+                <Globe size={28} />
+              </div>
+              <h3 className="text-2xl font-bold text-slate-900">Web Development</h3>
+            </div>
+            <div className="flex flex-wrap gap-3">
+              <Badge className="px-4 py-2 text-sm font-medium border transition-all duration-300 hover:scale-105 cursor-default bg-purple-100 text-purple-700 hover:bg-purple-200 border-purple-300">
+                React
+              </Badge>
+              <Badge className="px-4 py-2 text-sm font-medium border transition-all duration-300 hover:scale-105 cursor-default bg-purple-100 text-purple-700 hover:bg-purple-200 border-purple-300">
+                Node.js
+              </Badge>
+              <Badge className="px-4 py-2 text-sm font-medium border transition-all duration-300 hover:scale-105 cursor-default bg-purple-100 text-purple-700 hover:bg-purple-200 border-purple-300">
+                REST APIs
+              </Badge>
+              <Badge className="px-4 py-2 text-sm font-medium border transition-all duration-300 hover:scale-105 cursor-default bg-purple-100 text-purple-700 hover:bg-purple-200 border-purple-300">
+                Responsive Design
+              </Badge>
+              <Badge className="px-4 py-2 text-sm font-medium border transition-all duration-300 hover:scale-105 cursor-default bg-purple-100 text-purple-700 hover:bg-purple-200 border-purple-300">
+                MongoDB
+              </Badge>
+            </div>
+          </Card>
+
+          {/* Tools */}
+          <Card className="p-8 hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+            <div className="flex items-center gap-4 mb-6">
+              <div className="p-4 rounded-lg bg-orange-100 text-orange-600">
+                <GitBranch size={28} />
+              </div>
+              <h3 className="text-2xl font-bold text-slate-900">Tools & Platforms</h3>
+            </div>
+            <div className="flex flex-wrap gap-3">
+              <Badge className="px-4 py-2 text-sm font-medium border transition-all duration-300 hover:scale-105 cursor-default bg-orange-100 text-orange-700 hover:bg-orange-200 border-orange-300">
+                Git
+              </Badge>
+              <Badge className="px-4 py-2 text-sm font-medium border transition-all duration-300 hover:scale-105 cursor-default bg-orange-100 text-orange-700 hover:bg-orange-200 border-orange-300">
+                GitHub
+              </Badge>
+              <Badge className="px-4 py-2 text-sm font-medium border transition-all duration-300 hover:scale-105 cursor-default bg-orange-100 text-orange-700 hover:bg-orange-200 border-orange-300">
+                VS Code
+              </Badge>
+              <Badge className="px-4 py-2 text-sm font-medium border transition-all duration-300 hover:scale-105 cursor-default bg-orange-100 text-orange-700 hover:bg-orange-200 border-orange-300">
+                Linux
+              </Badge>
+              <Badge className="px-4 py-2 text-sm font-medium border transition-all duration-300 hover:scale-105 cursor-default bg-orange-100 text-orange-700 hover:bg-orange-200 border-orange-300">
+                Postman
+              </Badge>
+            </div>
+          </Card>
         </div>
 
-        {/* Additional Skills Section */}
+        {/* Focus Areas */}
         <div className="mt-16 text-center">
           <Card className="p-8 max-w-4xl mx-auto">
             <div className="flex items-center justify-center gap-3 mb-4">
