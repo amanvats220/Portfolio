@@ -50,20 +50,16 @@ const CodingProfiles = () => {
   ];
 
   const getStatColorClasses = (color) => {
-    const colorMap = {
-      green: 'bg-green-100 text-green-700',
-      blue: 'bg-blue-100 text-blue-700',
-      purple: 'bg-purple-100 text-purple-700',
-    };
-    return colorMap[color];
+    if (color === 'green') return 'bg-green-100 text-green-700';
+    if (color === 'blue') return 'bg-blue-100 text-blue-700';
+    if (color === 'purple') return 'bg-purple-100 text-purple-700';
+    return '';
   };
 
   const getButtonColorClasses = (color) => {
-    const colorMap = {
-      orange: 'bg-orange-600 hover:bg-orange-700',
-      slate: 'bg-slate-800 hover:bg-slate-900',
-    };
-    return colorMap[color];
+    if (color === 'orange') return 'bg-orange-600 hover:bg-orange-700';
+    if (color === 'slate') return 'bg-slate-800 hover:bg-slate-900';
+    return '';
   };
 
   return (
