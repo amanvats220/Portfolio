@@ -60,12 +60,10 @@ const Projects = () => {
   ];
 
   const getColorClasses = (color) => {
-    const colorMap = {
-      blue: 'from-blue-500 to-blue-600',
-      purple: 'from-purple-500 to-purple-600',
-      green: 'from-green-500 to-green-600',
-    };
-    return colorMap[color];
+    if (color === 'blue') return 'from-blue-500 to-blue-600';
+    if (color === 'purple') return 'from-purple-500 to-purple-600';
+    if (color === 'green') return 'from-green-500 to-green-600';
+    return '';
   };
 
   return (
