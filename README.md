@@ -82,7 +82,7 @@ A responsive and minimal personal portfolio website designed to present skills, 
 - Fast loading and accessible structure  
 
 🔗 GitHub Repository: This repository  
-🔗 Live Demo: https://github.com/amanvats220/Portfolio 
+🔗 Live Demo: https://aman-dev-showcase.preview.emergentagent.com/
 
 ---
 
